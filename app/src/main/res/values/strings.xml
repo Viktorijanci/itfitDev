@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application22</string>
+    <string name="cilj">Šta želite da postignete?</string>
+    <string name="smrsaj">Smršati</string>
+    <string name="odr">Održati težinu</string>
+    <string name="pov">Udebljati se</string>
+    <string name="kol">Koliko ste aktivni?</string>
+    <string name="nis1">Nisam mnogo aktivan</string>
+    <string name="nis2">Donekle aktivan</string>
+    <string name="nis3">Aktivan</string>
+    <string name="nis4">Veoma aktivan</string>
+    <string name="ni1">Većinski deo dana provedem sedeći (npr. kancelarijski posao)</string>
+    <string name="ni2">Provodim dobar deo dana na nogama (npr. predavač, prodavac)</string>
+    <string name="ni3">Provodim dobar deo dana radeći neku fizičku aktivnost (npr. poštar)</string>
+    <string name="ni4">Većinski deo dana provodim radeći neku težu fizićku aktivnost (npr. kurir, stolar)</string>
+    <string name="pol">Pol</string>
+    <string name="mus">Muško</string>
+    <string name="zen">Žensko</string>
+    <string name="rod">Datum rođenja</string>
+    <string name="vis">Visina</string>
+    <string name="tez">Težina</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
