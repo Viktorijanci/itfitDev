@@ -21,6 +21,13 @@
     <string name="tez">Težina</string>
     <string name="cm">cm</string>
     <string name="kg">kg</string>
+    <string name="cil">Krajnji cilj</string>
+    <string name="koji">Nedeljni cilj</string>
+    <string name="neb">Ne brinite, možete ovo kasnije izmeniti.</string>
+    <string name="kg1">Smršaj 0,25kg nedeljno</string>
+    <string name="kg2">Smršaj 0,50kg nedeljno</string>
+    <string name="kg3">Smršaj 0,75kg nedeljno</string>
+    <string name="kg4">Smršaj 1kg nedeljno</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
