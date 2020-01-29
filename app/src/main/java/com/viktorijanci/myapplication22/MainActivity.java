@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements BlankFragment.promeni, BlankFragment2.promeni2, BlankFragment4.BlankFragment4Listener, BlankFragment3.get, BlankFragment5.promeni5 {
+public class MainActivity extends AppCompatActivity implements BlankFragment.promeni, BlankFragment2.promeni2, BlankFragment4.BlankFragment4Listener, BlankFragment3.get, BlankFragment5.promeni5,BlankFragment6.promeni6 {
     final private static String TAG="Glavni";
     EditText editText;
     private String readFromFileTEXT(Context context, String ime) {
@@ -88,6 +88,11 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.pro
     public void promeniProgress5(){
         ProgressBar progressBar = findViewById(R.id.progressBar2);
         progressBar.setProgress(5);
+    }
+    @Override
+    public void promeniProgress6(){
+        ProgressBar progressBar = findViewById(R.id.progressBar2);
+        progressBar.setProgress(6);
     }
     @Override
     public void onFinishBlankFragment4(String date, Dialog dialog){
