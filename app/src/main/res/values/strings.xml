@@ -28,6 +28,27 @@
     <string name="kg2">Smršaj 0,50kg nedeljno</string>
     <string name="kg3">Smršaj 0,75kg nedeljno</string>
     <string name="kg4">Smršaj 1kg nedeljno</string>
+    <string name="cest">Čestitamo!</string>
+    <string name="vas">Vaš plan je spreman i napravili ste prvi korak ka Vašoj ciljanoj težini.</string>
+    <string name="dne">Vaš dnevni cilj:</string>
+    <string name="cal">0</string>
+    <string name="call">kalorija</string>
+    <string name="pods">Uključi podsetnike</string>
+    <string name="poc">Počni da pratiš</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_actual_main">ActualMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
 </resources>

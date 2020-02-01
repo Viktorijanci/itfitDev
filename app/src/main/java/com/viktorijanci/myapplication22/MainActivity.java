@@ -1,16 +1,17 @@
 package com.viktorijanci.myapplication22;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -19,7 +20,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements BlankFragment.promeni, BlankFragment2.promeni2, BlankFragment4.BlankFragment4Listener, BlankFragment3.get, BlankFragment5.promeni5,BlankFragment6.promeni6 {
+public class MainActivity extends AppCompatActivity implements BlankFragment.promeni, BlankFragment2.promeni2, BlankFragment4.BlankFragment4Listener, BlankFragment3.get, BlankFragment5.promeni5,BlankFragment6.promeni6,BlankFragment7.promeni7 {
     final private static String TAG="Glavni";
     EditText editText;
     private String readFromFileTEXT(Context context, String ime) {
@@ -93,6 +94,11 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.pro
     public void promeniProgress6(){
         ProgressBar progressBar = findViewById(R.id.progressBar2);
         progressBar.setProgress(6);
+    }
+    @Override
+    public void promeniProgress7(){
+        Intent i= new Intent(this, ActualMainActivity.class);
+        startActivity(i);
     }
     @Override
     public void onFinishBlankFragment4(String date, Dialog dialog){

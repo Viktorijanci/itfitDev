@@ -1,19 +1,18 @@
 package com.viktorijanci.myapplication22;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class BlankFragment3 extends Fragment {
     final private static String TAG="FragmentGlavni3";
@@ -38,11 +37,11 @@ public class BlankFragment3 extends Fragment {
                 showDialog();
             }
         });
-        RadioGroup radioGroup = (RadioGroup) v.findViewById(R.id.radioGroup);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final RadioGroup radioGroup = (RadioGroup) v.findViewById(R.id.radioGroup);
+        v.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(!mEditText.getText().toString().equals("")){
+            public void onClick(View v) {
+                if(radioGroup.getCheckedRadioButtonId()!=-1 && !mEditText.getText().toString().equals("")){
                     Log.i(TAG, "uspesno1");
                     FragmentManager fm = getFragmentManager();
                     BlankFragment5 mFragment = new BlankFragment5();
@@ -51,6 +50,7 @@ public class BlankFragment3 extends Fragment {
                     ft.addToBackStack(null);
                     ft.commit();
                     ((get)getActivity()).promeniProgress3();
+
                 }
             }
         });
