@@ -10,7 +10,6 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -113,13 +112,8 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.pro
     @Override
     public void promeniProgress7(){
         podesavanja.lik=korisnik;
-        JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject.put("vrednost", podesavanja);
-            saveToFile(jsonObject.toString(),getApplicationContext(),"podesavanja");
-        }catch(JSONException e){
-            e.printStackTrace();
-        }
+        JSONObject jsonObject = podesavanja.toJSON();
+        saveToFile(jsonObject.toString(),getApplicationContext(),"podesavanjaaa");
         Intent i= new Intent(this, ActualMainActivity.class);
         startActivity(i);
     }

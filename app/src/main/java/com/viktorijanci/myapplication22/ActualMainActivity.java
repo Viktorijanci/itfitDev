@@ -1,6 +1,8 @@
 package com.viktorijanci.myapplication22;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +15,39 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class ActualMainActivity extends AppCompatActivity {
+    final private static String TAG="Kuca";
+
+    private String readFromFileJSON(Context context, String ime) {
+        String line = null;
+        try {
+            String path = context.getFilesDir().getAbsolutePath();
+            new File(path).mkdir();
+            File fajl = new File(path+ime+".json");
+            if(!fajl.exists()) fajl.createNewFile();
+            FileInputStream fileInputStream = new FileInputStream (fajl);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (line = bufferedReader.readLine()) != null )
+                stringBuilder.append(line).append(System.getProperty("line.separator"));
+            fileInputStream.close();
+            line = stringBuilder.toString();
+
+            bufferedReader.close();
+        }
+        catch(IOException ex) {
+            ex.printStackTrace();
+        }
+        return line;
+    }
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -21,6 +55,7 @@ public class ActualMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actual_main);
+        Log.i(TAG, readFromFileJSON(getApplicationContext(), "podesavanjaaa"));
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

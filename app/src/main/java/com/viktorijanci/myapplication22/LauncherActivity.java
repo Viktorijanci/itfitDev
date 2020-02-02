@@ -3,6 +3,7 @@ package com.viktorijanci.myapplication22;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class LauncherActivity extends AppCompatActivity {
+    final private static String TAG="Pocetni";
     private String readFromFileJSON(Context context, String ime) {
         String line = null;
         try {
@@ -42,7 +44,8 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
         Intent i;
-        if(readFromFileJSON(getApplicationContext(),"podesavanja").equals("")){
+        Log.i(TAG, readFromFileJSON(getApplicationContext(), "podesavanjaaa"));
+        if(readFromFileJSON(getApplicationContext(),"podesavanjaaa").equals("")){
             i=new Intent(this, MainActivity.class);
         } else{
             i=new Intent(this, ActualMainActivity.class);
