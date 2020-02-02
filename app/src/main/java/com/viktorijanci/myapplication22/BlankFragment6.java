@@ -23,7 +23,7 @@ public class BlankFragment6 extends Fragment {
         // Required empty public constructor
     }
     public interface promeni6{
-        void promeniProgress6();
+        void promeniProgress6(int krajnji, int nedeljni);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,7 +44,22 @@ public class BlankFragment6 extends Fragment {
                     ft.replace(R.id.mojLayout, mFragment);
                     ft.addToBackStack(null);
                     ft.commit();
-                    ((promeni6) getActivity()).promeniProgress6();
+                    int cilj;
+                    switch (radioGroup.getCheckedRadioButtonId()){
+                        case R.id.radioButton7:
+                            cilj=0;
+                            break;
+                        case R.id.radioButton8:
+                            cilj=1;
+                            break;
+                        case R.id.radioButton9:
+                            cilj=2;
+                            break;
+                        default:
+                            cilj=3;
+                            break;
+                    }
+                    ((promeni6) getActivity()).promeniProgress6(Integer.parseInt(String.valueOf(editText.getText())),cilj);
                 }
             }
         });

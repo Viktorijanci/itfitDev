@@ -18,7 +18,7 @@ public class BlankFragment3 extends Fragment {
     final private static String TAG="FragmentGlavni3";
     public interface get {
         void getEditText(EditText editText);
-        void promeniProgress3();
+        void promeniProgress3(String datum, int pol);
     }
     public static BlankFragment3 newInstance() {
         return new BlankFragment3();
@@ -49,8 +49,13 @@ public class BlankFragment3 extends Fragment {
                     ft.replace(R.id.mojLayout,mFragment);
                     ft.addToBackStack(null);
                     ft.commit();
-                    ((get)getActivity()).promeniProgress3();
-
+                    int cilj;
+                    if (radioGroup.getCheckedRadioButtonId() == R.id.radioButton5) {
+                        cilj = 0;
+                    } else {
+                        cilj = 1;
+                    }
+                    ((get)getActivity()).promeniProgress3(String.valueOf(mEditText.getText()),cilj);
                 }
             }
         });
@@ -66,6 +71,5 @@ public class BlankFragment3 extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        // TODO: Use the ViewModel
     }
 }
