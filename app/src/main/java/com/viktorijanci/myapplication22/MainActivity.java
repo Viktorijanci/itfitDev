@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.pro
     EditText editText;
     Korisnik korisnik = new Korisnik();
     Podesavanja podesavanja = new Podesavanja();
-
-    private String readFromFileJSON(Context context, String ime) {
+    public String readFromFileJSON(Context context, String ime) {
         String line = null;
         try {
             String path = context.getFilesDir().getAbsolutePath();
