@@ -43,6 +43,12 @@
     <string name="plus">+</string>
     <string name="jednako">=</string>
     <string name="dnev">Dnevni cilj</string>
+    <string name="ciljevi">Ciljevi:</string>
+    <string name="po">Po obrocima:</string>
+    <string name="dor">Doručak:</string>
+    <string name="ruc">Ručak:</string>
+    <string name="uz">Užina:</string>
+    <string name="vec">Večera:</string>
     <string name="title_activity_actual_main">ActualMainActivity</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

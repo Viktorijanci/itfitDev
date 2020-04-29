@@ -8,6 +8,12 @@ public class JeloBaza {
     int kalorija;
     int mast;
     int protein;
+    public JeloBaza(String ime,int kalorija,int mast,int protein){
+        this.ime=ime;
+        this.kalorija=kalorija;
+        this.mast=mast;
+        this.protein=protein;
+    }
     public JSONObject toJSON(){
         JSONObject jsonObject = new JSONObject();
         try{
@@ -19,5 +25,8 @@ public class JeloBaza {
             e.printStackTrace();
         }
         return jsonObject;
+    }
+    public String getIme() {
+        return this.ime;
     }
 }
