@@ -8,12 +8,6 @@ public class Korisnik {
     String datum;
     int visina;
     int tezina;
-    public Korisnik(int pol, String datum, int visina, int tezina){
-        this.pol=pol;
-        this.datum=datum;
-        this.visina=visina;
-        this.tezina=tezina;
-    }
     public JSONObject toJSON(){
         JSONObject jsonObject=new JSONObject();
         try{
