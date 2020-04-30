@@ -26,7 +26,8 @@ public class JeloBaza {
         }
         return jsonObject;
     }
-    public String getIme() {
-        return this.ime;
-    }
+    public String getIme() {return this.ime;}
+    public int getKalorija() {return this.kalorija;}
+    public int getMast() {return this.mast;}
+    public int getProtein() {return this.protein;}
 }

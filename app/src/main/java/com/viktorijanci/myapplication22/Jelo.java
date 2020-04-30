@@ -53,7 +53,4 @@ public class Jelo {
     public int getThumb(){
         return this.thumb;
     }
-    public void setThumb(int thumb){
-        this.thumb = thumb;
-    }
 }

@@ -26,4 +26,8 @@ public class Korisnik {
         }
         return jsonObject;
     }
+    public int getPol(){return this.pol;}
+    public String getDatum(){return this.datum;}
+    public int getVisina(){return this.visina;}
+    public int getTezina(){return this.tezina;}
 }
