@@ -22,6 +22,7 @@ Ime im otkriva svrhu. JSONObject je opšti oblik Objecta u JSONu, a JSONArray je
 Kada imamo JSONObject, on ima 2 glavne metode koje ćemo mi koristiti da manipuliramo njime.
 - get(String)
 - put(String, Object)
+
 Kada imamo JSONArray, on isto ima 2 glavne metode koje ćemo koristiti:
 - get(int)
 - put(JSONObject)
