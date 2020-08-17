@@ -18,6 +18,7 @@ Baza podataka je pisana u [JSONu](https://www.tutorialspoint.com/json/index.htm)
 U Javi JSON ima mnogo tipova podataka, ali mi koristimo 2 najbitnija:
 - JSONObject
 - JSONArray
+
 Ime im otkriva svrhu. JSONObject je opšti oblik Objecta u JSONu, a JSONArray je niz JSONObjecta.
 Kada imamo JSONObject, on ima 2 glavne metode koje ćemo mi koristiti da manipuliramo njime.
 - get(String)
