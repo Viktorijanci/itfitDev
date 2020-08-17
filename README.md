@@ -12,7 +12,8 @@ Mrzelo me je više da pišem. Napisaću ako neko bude tražio i kada mi se bude 
 ### Komentarisanje koda
 Mrzelo me je da komentarišem. Ukoliko implementacija neke metode nije jasna, mogu da unesem komentare koji objašnjavaju kako radi metoda. Takođe mogu i da nacrtam blok dijagram.
 ### Baza podataka
-Nešto važno što moram napomenuti pre nego što objasnim funkcionisanje baze: imamo 2 baze zapravo. Aplikaciona i lokalna. Aplikaciona je ono što delimo i ona je u globalnom kontekstu. Lokalna je svojstvena 
+Nešto važno što moram napomenuti pre nego što objasnim funkcionisanje baze: imamo 2 baze zapravo. Aplikaciona i lokalna. Aplikaciona je ono što delimo i ona je u globalnom kontekstu. Lokalna je svojstvena.
+
 Baza podataka je pisana u [JSONu](https://www.tutorialspoint.com/json/index.htm) zbog toga što je potekla iz JS i lako je koristiti. U linku je kratko objašnjen JSON sa nekim primerima primene i sintakse. U Javi se on koristi na sledeći način:
 #### KORIŠĆENJE
 U Javi JSON ima mnogo tipova podataka, ali mi koristimo 2 najbitnija:
